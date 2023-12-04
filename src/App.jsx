@@ -61,13 +61,13 @@ const App = () => {
   }, [loggedInUser])
 
   useEffect(() => {
-    if(loggedInUser){
+    if(images[0] !== undefined){
         const bucketId = images[0]
         const imageId = images[1]
     
         const result = storage.getFilePreview(bucketId, imageId);
         setPreviewImage(result?.href) // Resource URL
-      }
+      }else return;
   }, [images])
 
   return (
