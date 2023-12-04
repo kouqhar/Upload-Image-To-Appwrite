@@ -1,0 +1,42 @@
+.content{
+  width: 80%;
+  margin-inline: auto;
+}
+
+form{
+  width: 60%;
+  margin-inline: auto;
+}
+
+input, button{
+  padding: 1rem .5rem;
+  display: block;
+  margin-block: 1rem;
+  width: 100%;
+}
+
+.form_notice{
+  text-align: center;
+}
+.form_notice p{
+  color: red;
+  font-weight: bold;
+}
+
+.display_image{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: .5rem 2rem;
+  height: 50vh;
+  margin-block-end: 2rem;
+  gap: 1rem;
+}
+
+.display_image img{
+/*  border-radius: 80%;*/
+  object-fit: cover;
+  aspect-ratio: 1;
+  height: 90%;
+  width: 50%;
+}
